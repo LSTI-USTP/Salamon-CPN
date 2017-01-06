@@ -1,0 +1,109 @@
+/*			GERAL			*/
+table{
+	border: 1px #dfdfdf solid;
+	border-radius: 2px;
+	padding-top: 10px;
+	width: 100%;
+}
+table thead,
+table tbody,
+table tr{
+	display: block;
+	width: 100%;
+
+}
+table thead{	
+	border-bottom: 2px #eee solid;	
+}
+table tr{
+	display: flex;
+	padding-left: 5px;
+	justify-content: space-between;
+}
+thead th{
+	line-height: 2em;
+	color: #222;
+	text-align: left;
+	font-size: .96em;
+	background: #fff;
+	border: 0;
+
+}
+tbody {
+	overflow: auto;
+	font-size: .95rem;
+}
+tbody tr{
+	cursor: pointer;
+	color: #555; 
+}
+.row-hover{
+	background: rgba(46, 155, 220, .7) !important;
+	color: #fff !important;
+	transition: all .2s;
+}
+.row-selected{
+	background: #2E9BDC !important;
+	color: #fff;
+}
+tbody td{
+
+	line-height: 2em;
+}
+tbody i{
+	color: #444;
+	font-size: 1rem;
+	padding: 3px;
+	border: 1px #ccc solid;
+	border-radius: 3px;
+}
+
+tbody tr:nth-child(odd){
+	background: #F5F5F5;
+}
+
+/*			TABLE IN PGTO-PR			*/
+.list-multa tbody{
+	height: 300px;
+}
+.list-multa th,
+.list-multa td{
+	width: auto;
+}
+
+.list-multa th:nth-child(0),
+.list-multa td:nth-child(0){
+	width: 100px;
+}
+.list-multa th:nth-child(1),
+.list-multa td:nth-child(1){
+	width: 100px;
+}
+.list-multa th:nth-child(2),
+.list-multa td:nth-child(2){
+	width: 200px;
+}
+.list-multa th:nth-child(3),
+.list-multa td:nth-child(3){
+	width: 200px;
+}
+.list-multa th:nth-child(4),
+.list-multa td:nth-child(4){
+	width: 210px;
+}
+.list-multa th:nth-child(5),
+.list-multa td:nth-child(5){
+	width: 200px;
+}
+.list-multa th:nth-child(6),
+.list-multa td:nth-child(6){
+	width: 100px;
+}
+
+
+.list-multa .icon-info{
+	margin-right: 15px;
+}
+.listPayments tbody{
+	max-height: 240px;
+}

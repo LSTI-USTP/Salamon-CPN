@@ -1,0 +1,492 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial, serif;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #F6F6F6;
+	width: 100%;
+	height: 100%;
+	padding: 10px 80px;
+	position: absolute;
+	box-sizing: border-box;
+	z-index: -1;
+}
+
+.content div:not(.areaReicidente){
+	display: flex;
+	width: 100%;
+	background: #fff;
+	
+}
+
+.content div > div{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	margin: 10px 0;
+	padding: 5px 30px;
+}
+
+.content .contentRight{
+	border-left: 2px solid #eee;
+}
+.content div article{
+	display: flex;	
+	width: 96%;
+}
+
+.content div section{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 0 10px;
+}
+
+h2,h3,h4{
+	color: #1F4E79;
+	padding: 5px;
+}
+h2{
+	margin: 5px 0;
+	font-size: 20px;
+}
+h3{
+	width: 95%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-bottom: 2px solid #ddd;
+	font-size: 21px;
+}
+h4{
+	margin: 5px 0;
+	font-size: 18px;
+}
+
+label{
+	color: #7e7e7e;
+	font: 16px arial;
+	margin: 3px;
+	padding-top: 10px;
+	font-weight: 700;
+}
+input[type=text], select, textarea, [type=number]{
+	padding: 9px;
+	font: 15px arial;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #666;
+	width: 100%;
+	box-shadow: 0 0 0 0.3px #bbb;
+}
+input[type=text]:hover, input[type=text]:focus, 
+select:hover, select:focus, 
+textarea:hover, textarea:focus,
+[type=number]:hover, [type=number]:focus
+{
+	box-shadow: 0 0 5px -1.3px #01A3DF;
+}
+textarea{
+	height: 90px;
+	width: 96%;
+}
+#equipaNumeroAgente{ /* Input numero de agentes*/
+	width: 21%;
+	padding: 6px 7px;
+}
+input[type=submit], button{
+	padding: 10px 20px !important;
+	font-size: 16px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 3px;
+}
+input[type=radio]{
+	margin: 6px 13px;
+}
+input[type=radio]:hover, input[type=radio]:focus{
+	box-shadow: 0 0 1px -1px #01A3DF;
+}
+
+
+
+table{
+    margin: 0 auto;
+    padding: 5px;
+   	width: 98%;
+   	border-bottom: 2px solid #ddd;	
+}
+table thead{
+	width: 100%;
+
+}
+table thead tr{
+	width: 100%;
+	display: flex;
+	
+}
+
+table th{
+	padding: 10px;
+	font-family: arial;
+	background: #fff;
+	border-bottom: 2px solid #ddd;
+	border-top: 2px solid #ddd;
+	width: 100% !important;
+	color: #7F7F7F;
+	text-align: left;
+	margin: 0;
+}
+table thead tr th {
+	display: flex;
+	padding: 6px;
+}
+tbody tr{
+	text-align: left;
+	background: #F2F2F2;
+	color: #555;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+tbody tr:nth-child(odd){
+	background: #FAFAFA;
+}
+tbody tr:hover{
+	background: #35B7E7;
+	color: #fff;
+}
+tbody{
+	display: block;
+	overflow: auto;
+	height:460px;
+}
+tbody td{
+	width: 100% !important;
+	display: block;
+	text-align: left;
+	display: flex;
+	padding: 5px !important;
+	padding-left: 13px;
+}
+tbody td i{
+	cursor: pointer;
+	border: none;
+	margin: 0 3px;
+}
+.icon-cross:hover{
+	color: #E81123;
+}
+.icon-pencil:hover{
+	color: #1C881B;
+}
+
+.trMost{
+	width: 50%;
+}
+#equipaTabelaAgente{
+	width: auto;
+	max-height: 200px;
+}
+#equipaCorpoDispositivo{
+	max-height: 200px;
+}
+#tableAlucacao{
+	max-height: 100px;
+}
+#contenerDispo{
+	max-height: 200px;
+}
+
+/*   -----------Area Buttons------------*/
+
+.areaSave{
+	align-items: center;
+	justify-content: center; 
+	border-top: 2px solid #EEE;
+}
+.btSave, .btAddUser{
+	margin: 15px;
+	color:  #31B4E3;
+	border: none;
+	border: 2px solid #31B4E3;
+	background: #fff;
+	font-weight: bold;
+	transition: all 0.3s;
+}
+.btSave:hover, .btAddUser:hover{
+	background:  #31B4E3;
+	color: #fff;
+}
+.btAdd{
+	color: #fff;
+	border: none;
+	transition: 0.5s;
+	background: #43A72D;
+}
+.btAdd:hover{
+	background: #1C881B;
+	transition: 0.5s;
+}
+.areaAdd{
+	display: flex;
+	width: 94% !important;
+	justify-content: space-between;
+}
+.areaAdd label{
+	border-bottom: 2px solid #eee;
+	width: 50%;
+	padding: 0 0;
+	height: 17px;
+	
+}
+
+/************* Dispositivo / Equipe *************/
+
+.areaEscDispositivo{
+	padding: 10px;
+	box-sizing: border-box;
+}
+.areaEscDispositivo aside{
+	width: 20%;
+	text-align: center;
+	border: 2px solid #31B4E3;
+	background: #fff;
+	color: #31B4E3;
+	text-transform: none;
+	border-radius: 5px;
+	padding: 13px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: color 1s;
+}
+
+.areaEscDispositivo aside:hover{
+	background: #31B4E3;
+	color: #fff;
+	transition: color 1s;
+}
+.areaEscDispositivo aside:hover div{
+	position: absolute;
+	left: 0;
+	transition: left 1s;
+}
+.areaEscDispositivo aside div{
+	position: absolute;
+	left: -40%;
+	top: 65px;
+	width: 40% !important;
+	box-shadow: 4px 6px 18px -8px #000;
+	transition: left 1s;
+}
+.areaEscDispositivo div table{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+
+.areaCartao .LBcartao{
+	width: 25%;
+}
+.areaCartao article{
+	width: 50%;
+}
+.areaCartao label{
+	padding-top: 0;
+}
+
+
+/* --------------------Equipa--------------- */
+
+.content .contentRight div{
+	position: absolute;
+	top: 215px;
+	box-shadow: 2px 4px 18px -8px #000;
+	transition: all 1s;
+	display: none;
+}
+
+.content .contentRight .escDispositivo{
+	width: 26%;
+}
+.content .contentRight .escAgente{
+	width: 40%;
+}
+
+
+.areaTable{
+	padding-top: 25px;
+}
+.contentLeft .TXTVersao{
+	width: 95%;
+}
+.contentLeft .areaCor{
+	width: 100%;
+	margin-left: -15px;
+}
+.contentRight .TXTPuk{
+	width: 96%;
+}
+
+
+.SelectMenor{
+	width: 96%
+}
+.content .contentLeftMenor{
+	width: 80%;
+}
+
+.modalProcess img{
+    height: 30px;
+    width: 30px;
+}
+
+.processamento{
+    background: rgba(0,0,0,.5);
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    left:0; top:0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/*   -------------Infração---------------   */
+
+
+.content .contentBetween{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.content .contentBetween article{
+	width: auto;
+	margin: 10px;
+}
+.content .contentBetween .areaVeiculo{
+	margin-right: 65px;
+}
+.content .contentBetween [type=radio]{
+	margin: 15px;
+}
+.content .ContentFlex{
+	width: 100%;
+}
+.content .ContentFlex article{
+	width: 100%;
+}
+.content .ContentFlex .Right{
+	width: 40%;
+	margin-right: 25px;
+}
+.content .ContentFlex .Right textarea{
+	height: 190px;
+}
+.content .nome{
+	width: 100%;
+}
+.content .areaCoimaRadio{
+	margin: 15px 0;
+}
+.content .areaCoimaRadio [type=radio]{
+	margin: 15px;
+}
+.areaReicidente{
+	width: 30%;
+	padding-bottom: 10px;
+	border: 1px solid #ccc;
+	display: none;
+	background: #f8f8f8;
+	position: absolute;	
+}
+
+
+/* -------------Modal------------ */
+
+.modalFrameControl{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: rgba(0,0,0,0.6);
+    overflow: auto;
+    display: none;
+}
+.modalFrameControl .modalConteiner{
+    background: #fff;
+    border-radius: 3px;  
+    overflow: auto;
+    width: 35%;
+}
+.modalFrameControl .BobyModal{
+     padding: 20px 50px;
+}
+.modalFrameControl .areaTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.modalFrameControl .areaTitle h5{
+    padding: 20px;
+    height: 5px;
+    font-size: 25px;
+    color: #41BAEB;
+    text-align: center;
+    font-weight: normal;
+    display: block;
+}
+.modalFrameControl .areaTitle .CloseModal{
+    margin: 5px;
+    padding: 10px;
+    background: #E04343;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.modalFrameControl .areaTitle .CloseModal:hover{
+    background: #ED4E4D;
+}
+.modalFrameControl .BobyModal p{
+     padding: 10px;
+     color: #4D87E2;
+     font-size: 20px;
+}
+
+
+/* -----------Add User - Listagem Agente-----------*/
+
+.formUser article{
+	display: flex;
+}
+.formUser section{
+	display: flex;
+	flex-direction: column;
+}
+.formUser div{
+	padding-left: 20px;
+}
+.formUser input[type=checkbox]{
+	margin: 12px 10px;
+}
+.modalFrameControl .formUser .LBMenu{
+	padding-top: 3%;
+	display: block;
+}
+.btAddUser{
+	width: 100%;
+	margin-left: 0;
+}

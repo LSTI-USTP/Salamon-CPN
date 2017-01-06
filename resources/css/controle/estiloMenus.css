@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial, serif;
+}
+.menu{
+	display: flex;
+	justify-content: space-between;
+	background: #4682B4;
+	box-shadow: 0 0 8px -1px #000;
+}
+.menu ul, .subMenu ul{
+	display: flex;
+}
+.menu ul li, .menu label, .subMenu ul li{
+	list-style: none;
+}
+.menu ul li a, .subMenu ul li a{
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.menu ul li a{
+	color: #fff;
+	padding: 16px 10px;
+}
+.menu ul li a i{
+	font-size: 22px;
+	padding: 7px;
+}
+.menu ul li:hover{
+	background: #2E5678;
+	transition: background 1s;
+}
+.menu ul .active{
+	background: #2E5678;
+}
+
+
+
+.menu label{
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 15px;
+	width: 20%;
+	text-align: center;
+	z-index: 10;
+}
+.menu label i{
+	font-size: 18px;
+	padding: 5px;
+}
+.menu label:hover .AreaUser{
+	position: absolute;	
+	top: 40px;
+	transition: all .5s;
+}
+.menu label .AreaUser{
+	background: #fff;
+	color: transparent;
+	box-shadow: 2px 4px 18px -8px #000;
+	font-style: arial,serif;
+	position: absolute;
+	margin: 15px;
+	color: #555;
+	display: block;
+	top: -150px;
+	transition: all .5s;
+	z-index: -100;
+
+}
+.menu label .AreaUser ul{
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+.menu label .AreaUser ul li{
+	padding: 12px;
+	font-size: 16px;
+	
+}
+.menu label .AreaUser ul li:hover{
+	background: #ddd;
+
+}
+
+
+
+.subMenu{
+	margin-top: 10px;
+	display: flex;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 5px 8px -10px #000;
+}
+.subMenu ul li{
+	padding: 12px 0;
+	margin-left: 15px;
+}
+.subMenu ul .active{
+	border-bottom: 3px solid #468DC6;
+}
+.subMenu ul li a{
+	color: #666;
+}
+.subMenu ul li a i{
+	padding: 7px;
+}
+.subMenu ul li a:hover, .subMenu ul .active a{
+	color: #468DC6;
+}

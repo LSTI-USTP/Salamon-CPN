@@ -1,0 +1,130 @@
+
+.pageAdm2{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.pageAdm2 .bodyRelat{
+	flex-grow: 1;
+	display: flex;
+	border-top: 1px #ddd solid;
+}
+
+.bodyRelat aside{
+	width: 270px;
+	outline: 1px #ddd solid;
+	background: #333;
+	color: #eee;
+	padding-top: 20px;
+	flex-shrink: 0;
+}
+.bodyRelat h1{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.bodyRelat aside li{
+	position: relative;
+	padding-left: 20px;
+	cursor: pointer;
+	list-style: none;
+	line-height: 3em;
+	border-bottom: 1px #444 solid;
+	font-weight: bold;
+	transition: all .5s ease;
+}
+.bodyRelat aside li:hover{
+	background: #444;
+	transition: all .5s ease;
+}
+.bodyRelat .liSelected{
+	background: #444;
+}
+.bodyRelat .liSelected:after{
+	content: "";
+	position: absolute;
+	border-top: 5px transparent solid;
+	border-bottom: 5px transparent solid;
+	border-right: 8px #f5f5f5 solid;
+	top: 50%;
+	right: 0;
+	margin-top: -3px;
+	cursor: auto;
+}
+.bodyRelat article{
+	padding: 0 25px 10px 25px;
+	flex-grow: 1;
+	background: #f9f9f9;
+	color: #555;
+}
+
+article .headerArticle,
+article .below{
+	padding: 25px 10px;
+}
+
+.below select{
+	padding: 0 !important;
+}
+article .headerArticle{
+	display: flex;
+	background: #fff;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 8px 15px -10px rgba(0, 0, 0, 0.2);
+
+
+}
+.headerArticle .search{
+	height: 40px;
+	border: 1px #ddd solid;
+}
+.search input{
+	border: none !important;
+	min-width: 320px;
+	box-shadow: none !important; 
+}
+.search button{
+	font-size: 1.2em;
+	padding: 0 5px;
+	background: #fff;
+}
+.search .activeSearch{
+	background: #fff;
+}
+
+article .below{
+	background: #fff;
+	margin-top: 20px;
+
+}
+.below .filter{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.filter .filterSelect{
+	min-width: 250px;
+	height: 40px;
+	
+}
+.filter nav p{
+	display: inline;
+	margin-left: 20px;
+}
+.filter nav input{
+	border: 1px #ddd solid;
+	padding: 10px 5px;
+	min-width: 200px;
+}
+.filterSelect select,
+.filterSelect input{
+	font-size: .9em;
+
+}
+
+.below .dataRelat{
+	min-height: 300px;
+	background: #fff;
+	margin-top: 10px;
+	border: 1px #ddd solid;
+}

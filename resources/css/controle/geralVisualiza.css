@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding:0;
+	}
+/* configuraçao da pesquisa por tabela */
+	#heder{
+		width:100%;
+		
+		}
+		.Fmenu{
+			width:100%;
+			background:#CCC;
+			list-style:none;
+			}
+		.Smenu{
+			width:100%;
+			list-style:none;
+			border-bottom:2px solid #1399E1;
+			}
+			.Smenu li{
+				display:inline-block;
+				}
+				.Smenu li a{
+					display:block;
+					padding:10px 10px 10px 10px;
+					font-family:"Segoe UI";
+					font-size:16px;
+					font-weight:500;
+					text-decoration:none;
+					color:#333;
+					}
+			
+	#corpo{
+		width:100%;
+		display:flex;
+		}
+		.menuFilter{
+			width:20%;
+			height:580px;
+			background:#fff;
+			ruby-position:after;
+			border-right:2px solid #1399E1;
+			}
+			.menuFilter .titul{
+				padding:10px;
+				font-family:"Segoe UI";
+				font-size:16px;
+				font-weight:500;
+				color:#000;
+				background:#F0F0F0;
+				width:90%;
+				margin-top:20px;
+				display:block
+				}
+				.menuFilter .intracao{
+						border:none;
+						border:1px solid #ccc;
+						padding:5px;
+						margin-left:5px;
+						width:230px;
+						border-radius:5px;
+						margin-top:10px;
+					}
+				.menuFilter .result{
+					width:300px;
+					height:400px;
+					padding:10px;
+					position:absolute;
+					border:1px solid #E5E5E5;
+					background:#f2f2f2;
+					margin-left:275px;
+					margin-top:-23px;
+					display:none;
+					}
+					.menuFilter .result .f_janela{
+						font-size:16px;
+						padding:10px 3px 10px 10px; 
+						width:30px; 
+						height:30px; 
+						position:absolute; 
+						margin-left:255px;
+						cursor:pointer;
+						border-radius:3%;
+						background:#CCC;
+						margin-top:-7px;
+						}
+			.data{
+				width:98%;
+				padding:10px 10px 10px 10px;
+				display:flex;
+				}
+				.data label{
+					font-family:"Segoe UI";
+					font-size:14px;
+					font-weight:500;
+					display:block;
+					margin-top:5px;
+					}
+				.data .txt{
+					border:none;
+					border:1px solid #CCC;
+					padding:3px;
+					margin-top:5px;
+					width:150px;
+					border-radius:4px;
+					
+					}	
+			.nivel{
+				width:98%;
+				padding:5px 5px 5px 5px;
+				}
+				.nivel label{
+					font-family:"Segoe UI";
+					font-size:14px;
+					font-weight:500;
+					margin-left:40px;
+					}
+				.nivel .marcar1{
+					margin-left:45px;
+					margin-top:5px;
+					}
+				.nivel .marcar2{
+					margin-left:60px;
+					margin-top:5px;
+					}
+				.nivel .marcar3{
+					margin-top:5px;
+					margin-left:67px;
+					}
+			.identifica{
+				width:98%;
+				padding:5px 5px 5px 25px;
+				}
+				.identifica label{
+					font-family:"Segoe UI";
+					font-size:14px;
+					font-weight:500;
+					display:block;
+					margin-top:10px;
+					}
+				.identifica .txt{
+					border:none;
+					border:1px solid #999;
+					padding:5px;
+					width:210px;
+					border-radius:5px;
+					}
+		.conteudo{
+			width:80%;
+			height:auto;
+			background:#fff;
+			border-top:2px solid #1399E1;
+			}
+			.conteudo .tabela{
+				width:97%;
+				padding:15px;
+				}
+			.conteudo .tabela table{
+				width:100%;
+				height:auto;
+				padding:5px;
+				border:1px solid #E9E9E9;
+				font-family:"Segoe UI";
+				font-size:16px;
+				font-weight:500;
+				}
+			
+/* configuraçao da pesquisa por mapa */
+
+.mapa{
+	width:75%;
+	display:block;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	font-family:"Segoe UI";
+	font-size:16px;
+	font-weight:500;
+	position:absolute;
+	color:#fff;
+	}
+	.activo{
+		background:#0080C0;
+		}
+	#paginaLista #menuLista,
+	#paginaMapa #menuMapa{
+		background:#0080C0;
+	}
+
+/***************************
+sistema de visualizao dos filtros
+*****************************/
+#table-filtro{
+    width: 92%;
+}
+
+#table-filtro tr td{
+    
+    padding: 10px 5px 10px 5px;
+    background: #e8e8e8;
+    transition:all .1s ease ;
+    -webkit-transition: all .1s ease ;
+    -moz-transition: all .1s ease ;
+    -ms-transition: all .1s ease ;
+    -o-transition: all .1s ease ;
+    color: #000;
+   
+}	
+	
+#table-filtro tr td:hover{
+    background: #09f;
+    color:#fff ;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

@@ -1,0 +1,81 @@
+body{
+	background: url(../img/bg.jpg);
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial,serif;
+}
+#loginErrorInfo{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+#loginSenhasDiferentes{
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+}
+.content div{
+	background: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	border-radius: 3px;
+	box-shadow: -8px 8px 20px -8px #000;
+}
+.content div [type=text], [type=password]{
+	padding: 10px;
+	margin: 6px;
+	padding-left: 40px;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #333;
+	box-shadow: 1px 1px 10px #ddd;
+	width: 230px;
+}
+.content div .txtUser{
+	background: url(../img/user.png) left no-repeat;
+}
+.content div .txtPassword{
+	background: url(../img/lock.png) left no-repeat;
+}
+.content div .txtUser:hover, .content div .txtUser:focus, .txtPassword:hover, .txtPassword:focus{
+	box-shadow: 0 0 5px #01A3DF;
+}
+
+.content h3{
+	color: #00B0F0;
+	padding: 5px;
+	font-size: 28px;
+	margin: 30px 0;
+}
+.content [type=submit]{
+	margin-top: 30px;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 3px;
+	border: none;
+	background: #00B0F0;
+	color: #fff;
+	width: 230px;
+}
+.content [type=submit]:hover{
+	background: #01A3DF;
+	transition: 0.7s;
+}

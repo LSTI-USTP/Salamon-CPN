@@ -1,0 +1,231 @@
+.pgto-pr{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	
+}
+.geral-menu{
+	flex-grow: 0;
+	position: relative;
+	z-index: 30;
+}
+
+.body-pgto{
+	position: relative;
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.body-pgto > div{
+	position: absolute;
+	flex-shrink: 0;
+	flex-grow: 1;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+.more-info{
+	top: -100%;
+	background: #fff;
+	z-index: 20;
+	border-bottom: 1px #0C83DA solid;
+	transition: all .8s;
+}
+.more-info-showed{
+	top: 0;
+	transition: all .6s;
+}
+.more-info > label{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	font-size: 1.4em;
+	color: #444;
+}
+
+
+/*  Search bar */
+.searchBar{	
+    padding: .6em 0;
+    border: 1px #ccc solid;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 2.3em;
+    display: flex;
+}
+
+.searchBar input,
+.searchBar button{
+	border: none;
+	background: #fff;
+	font-size: 1.1em;
+}
+.searchBar input{
+	flex-grow: 1;
+	text-indent: 8px;
+
+}
+.searchBar  button{
+	font-size: 1.4em;
+	margin-right: 5px;
+}
+.list-multa{
+	width: 80%;
+	margin: 3rem auto;
+	margin-bottom: 0;
+}
+.info-data-selected{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	font-size: .95em;
+	color: #444;
+}
+.info-data-selected span{
+	font-weight: bold;
+}
+.info-data-selected label:first-child{
+	color: #0C83DA;
+}
+.info-data-selected label:first-child:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+
+/*			FIRST MODAL TO ADD NEW PAYMENT			*/
+
+
+.new-pgto{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+
+.new-pgto p{
+	margin-bottom: 20px;
+	font-size: .95em;
+	font-weight: bold;
+}
+
+.new-pgto p .my-personal-select,
+.new-pgto p input{
+	width: 100%;
+	height: 40px;
+}
+.new-pgto .my-personal-select select{
+	font-size: 1em;
+}
+
+.new-pgto span{
+	display: flex;
+	align-items: center;
+	border: 1px #ddd solid;
+	padding-right:  5px;
+	border-radius: 1px;
+	width: 100%;
+	position: relative;
+	margin-top: 3px;
+	font-weight: normal;
+}
+.new-pgto span input{
+	border: none;
+	padding: 0 6px;
+	font-size: 1.1em;
+}
+.new-pgto button{
+	padding: 12px;
+	font-size: 1rem;
+}
+
+
+
+
+/*			MODAL TO FINISH PAYMENT			*/
+
+.new-pgto2{
+	min-width: 700px;
+}
+
+.new-pgto2 > label{
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0 25px 0;
+}
+.new-pgto2 .vvv{
+	background: #f7f7f7;
+	font-size: .9em;
+}
+.body-pgto2{
+	max-height: 400px;
+	overflow: auto;
+}
+.new-pgto2 nav,
+.new-pgto2 section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+.new-pgto2 nav label:nth-child(1),
+.new-pgto2 section label:nth-child(1){
+	width: 12%;
+	font-weight: bold;
+}
+.new-pgto2 nav label:nth-child(2),
+.new-pgto2 section label:nth-child(2){
+	width: 45%;
+}
+.new-pgto2 nav label:nth-child(3),
+.new-pgto2 section label:nth-child(3){
+	width: 25%;
+	font-weight: bold;
+}
+.new-pgto2 nav label:nth-child(4),
+.new-pgto2 section label:nth-child(4){
+	width: 10%;
+}
+
+.new-pgto2 nav{
+	font-weight: bold;
+	border: 1px #ddd solid;
+	padding-top: 20px;
+}
+.new-pgto2 section{
+	padding: 10px 5px;
+	background: #fff;
+	border: 1px #ddd solid;
+	border-top: 0;
+
+}
+.new-pgto2 section button{
+	width: 100%;
+	padding: .5em;
+	font-size: .95em;
+	font-weight: bold;
+	background: #f0f0f0;
+	border: 1px #ddd solid;
+	border-radius: 4px;
+}
+.new-pgto2 section button:before{
+	content: "Pagar";
+
+}
+.new-pgto2 section .payed{
+	color: #fff;
+	background: #1FAA73;
+}
+.new-pgto2 section .payed:before{
+	content: "Pago";
+	transition: all .5s;
+}
+.new-pgto2 .bt-yes-no-cancel{
+	margin-top: 20px;
+}
+
+
+

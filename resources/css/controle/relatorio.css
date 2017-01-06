@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: arial, serif;
+}
+
+.contentRel{
+	padding: 30px;
+}
+.contentRel div{
+	display: flex;
+	margin-top: 10px;
+}
+
+.contentRel .SubmenuRel{
+	margin-top: 10px;
+	background: #fff;
+	width: 48%;
+	margin-left: 2%;
+}
+.contentRel .SubmenuRel ul{
+	display: flex;
+}
+.contentRel .SubmenuRel ul li{
+	padding: 0 10px;
+	list-style: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+	cursor: pointer;
+}
+.contentRel .SubmenuRel ul .active{
+	border-bottom: 3px solid #468DC6;
+	color: #468DC6;
+}
+
+
+
+.contentRel .areaSearch{
+	justify-content: flex-end;
+	padding: 10px;
+	width: 48%;
+	margin-top: -10px;
+}
+.contentRel .areaSearch [type=text]{
+	width: 60%;
+	font-size: 18px;
+	color: #7F7F7F;
+	padding: 8px;
+	padding-left: 7%;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	border-top-right-radius: inherit;
+	border-bottom-right-radius: initial;
+	box-shadow: 0 0 0 0.3px #bbb;
+	background: url(../../img/search.png) no-repeat left;
+}
+.areaSearch [type=text]:hover, .areaSearch [type=text]:focus, .areaSearch [type=submit]:hover
+{
+	box-shadow: 0 0 5px -1.3px #01A3DF;
+}
+
+.contentRel .areaSearch [type=submit]{
+	background: url(../../img/next1.png) no-repeat left;
+	border: 1px solid #ddd;
+	border-left: none;
+	border-radius: 3px;
+	box-shadow: 0 0 0 0.3px #bbb;
+	border-top-left-radius: inherit;
+	border-bottom-left-radius: initial;
+	padding-left: 5%;
+	padding-right: 2.5%;
+	width: 9%;
+	cursor: pointer;
+}
+
+h4{
+	color: #1F4E79;
+	padding: 5px;
+	margin: 5px 0;
+	font-size: 18px;
+	width: auto;
+}
+
+
+table{
+    margin: -5px auto;
+    padding: 5px;
+   	width: 98%;
+   	border-bottom: 2px solid #ddd;	
+}
+table thead{
+	width: 100%;
+
+}
+table thead tr{
+	width: 100%;
+	display: flex;
+}
+table tbody{
+	overflow: auto;
+	width: 100% !important;
+	display: block;
+	text-align: left;
+}
+table th{
+	background: #fff;
+	border-bottom: 2px solid #ddd;
+	border-top: 2px solid #ddd;
+	width: 150px;
+	color: #7F7F7F;
+	margin: 0;
+}
+tr{
+	background: #F2F2F2;
+	color: #555;
+	text-align: justify;
+}
+tr:hover, tr:nth-child(odd):hover{
+	background: #55C1E8;
+	color: #fff;
+}
+tr:focus, tr:nth-child(odd):focus{
+	background: #3296CC;
+	color: #fff;
+}
+tr:nth-child(odd){
+	background: #FAFAFA;
+}
+.ListHeight{
+	max-height: 400px;
+}
+td i{
+	padding: 5px;
+	cursor: pointer;
+}
+td .icon-pencil:hover{
+	color: #53B232;
+}
+td .icon-info:hover{
+	color: #166DAE;
+}
+td .icon-stop:hover, td .icon-cancel-circle:hover{
+	color: #D14524;
+}
+
+
+/* -------Listagem Agente---------------*/
+
+.areaAddUser{
+	padding: 0 15px;
+	margin-top: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.areaAddUser [type=submit]{
+	padding: 15px;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 3px;
+	background: #53B232;
+	color: #fff;
+	border: none;
+}
+.areaAddUser [type=submit]:hover{
+	background: #6AC239;
+}

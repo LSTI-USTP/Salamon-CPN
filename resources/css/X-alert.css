@@ -1,0 +1,75 @@
+.X-Notific{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	/*background: rgba(255 , 255 , 255 , .85);*/
+	z-index: 1000;	
+}
+.X-Notific h1{
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 1.4rem;
+}
+.X-Notific i{
+	font-size: 3.5rem;
+	margin-right: 20px;
+}
+.X-Notific p{
+	color: #555;
+}
+.X-Notific span{
+	position: absolute;
+	top: 5px;
+	font: .9rem 'Gill Sans MT';
+	color: #000;
+	cursor: pointer;
+}
+.X-type{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	margin-top: 20px;
+	padding: 20px;
+	max-width: 400px;
+	top: -100%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: .85rem;
+	background: #fff;
+	transition: all .3s ease;
+
+	box-shadow: 0 0 115px 0 #eee;
+}
+.X-type-slide{
+	top: 0;
+	transition: all .3s ease;
+}
+
+.X-Notific .success{
+	border: 2px #19BC9D solid;
+	color: #19BC9D;
+}
+.X-Notific .error{
+	border: 2px #E64E4E solid;
+	color: #E64E4E;
+}
+.X-Notific .info{
+	border: 2px #3B78E7 solid;
+	color: #3B78E7;
+}
+
+.X-Notific .icon-checkmark{
+	color: #19BC9D;
+	font-size: 1.8rem;
+	display: inline-block;
+	padding: 10px;
+	border: 5px #19BC9D solid;
+	border-radius: 50%;
+}
+.X-Notific .icon-info{
+	color: #3B78E7;
+}.X-Notific .icon-cancel-circle{
+	color: #E64E4E;
+}

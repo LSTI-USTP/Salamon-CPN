@@ -1,0 +1,383 @@
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+body{
+	overflow-x: hidden; 
+}
+#mapArea {
+height: 100%;
+}
+
+.corpo,
+.data p,
+.nivel > div{
+	display: flex;
+}
+
+.corpo{	
+	width: 100%;
+}
+.corpo .menuFilter{
+	width: 320px;
+	height: 100%;
+	flex-shrink: 0;
+	color: #444;
+	padding-bottom: 1rem;
+	font-size: .96rem;
+	background: #fff;
+	position: absolute;
+	z-index: 20;
+	left: -320px;
+	padding-right: 2px;
+	transition: left 0.3s;	
+}
+.corpo .visible{
+	position: absolute;
+	left: 0px;
+	transition: left 0.6s;
+
+}
+.corpo .conteudo{
+	flex-grow: 1;
+	border: 1px steelblue solid;
+}
+.menuFilter h1{
+	font-size: 1rem;
+	background: #f7f7f7;
+	padding: .7rem 1rem;
+	margin: 1rem 0 .5rem 0;
+}
+.procurar{
+	padding: 0 1rem;
+	position: relative;
+}
+.data p{
+	padding: 0 1rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.data input{
+	border: 1px #ddd solid;
+	padding: 6px;
+	margin: 5px 0;
+	margin-left: 10px;
+}
+.nivel > div{
+	justify-content: space-between;
+	padding: 0 1rem;
+}
+.nivel input{
+	display: none;
+}
+.nivel input[type=checkbox]:checked + label{
+	color: #fff;
+	font-weight: bold;
+	background: #4682B4;
+	border: 1px #4682B4 solid;
+}
+.nivel label{
+	font-weight: lighter;
+	cursor: pointer;
+	font-size: .9rem;
+	padding: .4rem 1.2rem;
+	border-radius: 2px;
+	background: #f9f9f9;
+	border: 1px #ddd solid;
+}
+.identifica p{
+	padding: 0 1rem;
+	margin-top: .5rem;
+}
+.result{
+	position: absolute;
+	width: 350px;
+	top: 0;
+	right: -352px;
+	padding: .5rem 1rem;
+	background: #f8f8f8;
+	height: 400px;
+	overflow: scroll;
+	display: none;
+}
+.result span{
+	float: right;
+	cursor: pointer;
+}
+.result table{
+	clear: both;
+}
+
+
+
+
+.areaTolls{
+	width: 25%;
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	z-index: 100;
+	display: flex;	
+}
+.areaTolls, .areaTolls label{
+	font-family: 'Roboto';
+}
+.closeToll{
+	color: red;
+	text-align: right;
+	margin: 0 5px;
+	margin-bottom: 5px; 
+	padding: 5px;
+	cursor: pointer;
+	display: block;
+}
+.closeToll:hover{
+	color: #C33D27;
+}
+.tool{
+	background: #fff;
+	border-radius: 3px;
+	width: 100%;	
+	border: 1px solid #bbb;
+	z-index: 10;
+}
+.tool h3{
+	padding-left: 10px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.tool section{
+	display: flex;
+}
+.Selected{
+	background: #f1f1f1;
+}
+.tool section article{
+	padding: 7px;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	display: flex;
+}
+.areaTolls label, .yes label{
+	color: #333;
+	font-weight: 600;
+	margin: 3px 10px;
+	font-size: 16px;
+}
+.tool .geral{
+	max-height: 400px;
+	overflow: auto;
+}
+.tool .Mgrave{
+	border-left: 4px solid #FF8203;
+}
+
+.tool .limpo{
+	border-left: 4px solid #007F00;
+}
+.tool .grave{
+	border-left: 4px solid #E81123;
+}
+.tool .leve{
+	border-left: 4px solid #F6BD31;
+}
+
+
+.left{
+	float: right;
+	margin: 5px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+.toolSecond{
+	background: #fff;
+	border-radius: 3px;
+	border-left: 1px solid #ddd;
+	width: 100px;
+	max-height: 500px;
+	overflow: auto;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	transition: left .6s;
+	border: 1px solid #bbb;
+}
+.toolSecond section{
+	display: flex;
+	padding: 10px;
+}
+.toolSecond section article{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+.toolSecond label{
+	font-size: 16px !important;
+
+}
+.show{
+	position: absolute;
+	left: 100%;
+	width: 450px;
+	transition: left .6s;
+}
+.yes{
+	width: 50% !important;
+	left: 300px !important;
+	top: 140px;
+}
+
+
+.areaTotal{
+	padding: 15px 5px;
+	border-top: 2px solid #ccc;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+
+}
+.areaTotal .totalR{
+	color: #000;
+}
+.areaTotal .total{
+	color: green;
+}
+.areaInfo{
+	display: flex;
+	flex-direction: column;
+}
+.areaImg{
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: flex-end;
+}
+.areaImg img{
+	width: 25px;
+	height: 30px;
+	margin: 6px;
+	cursor: pointer;
+}
+#apre img{
+	width: 37px;
+	height: 40px;
+}
+#apre{
+	justify-content: space-around !important;
+}
+.areaImg .border{
+	padding-bottom: 3px;
+	border-bottom: 3px solid #4682B4;
+}
+.areaImg .veiculo{
+	width: 43px !important;
+}
+.infracoes label{
+	padding-left: 40px;
+	font-size: 14px !important;
+}
+.noAprencao{
+	font-size: 14px !important;
+	color: #D85625 !important;
+}
+.policial, .imgMotorista{
+	width: 10%;
+}
+
+
+
+
+.areaValores{
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	right: 0;
+	background: #fff;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	/*cursor: pointer;*/
+}
+.areaValores article{
+	padding: 8px;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-right: 1px solid #ddd;
+
+}
+.areaValores article label{
+	padding: 0px 4px;
+	cursor: pointer;
+}
+.areaValores .atuacao label{
+	color: #0078D7;
+}
+.areaValores .multas label{
+	color: #17974C;
+}
+.areaValores .graves label{
+	color: #FF8203;
+}
+.areaValores .mgraves label{
+	color: #E81123;
+}
+.areaValores .leves label{
+	color: #F6BD31;
+}
+#tempoP{
+	width: 90% !important;
+	box-shadow: none !important;
+	margin-top: 4px;
+}
+
+
+
+.titleV{
+	border-bottom: none !important;
+	text-align: center;
+}
+.menuV{
+	display: flex;
+	justify-content: space-around;
+	font-weight: bold;
+}
+.menuV p{
+	padding: 7px;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 3px;	
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	
+}
+.menuV .menuactive{
+	border: 1px solid #ccc;
+	border-bottom: none;
+	color: #1F4D78;
+}
+.esconde{
+	display: none !important;
+}
+
+.termSecao{
+	position: absolute;
+	right: 40%;
+}
+
+
+
+
+.modalValores{
+	position: absolute;
+	right: 0;
+	transition: right .6s;
+	width: 25%;
+	top: 100px;
+}
+
+.rightSHOW{
+	right: -100%;
+	transition: right .6s;
+}

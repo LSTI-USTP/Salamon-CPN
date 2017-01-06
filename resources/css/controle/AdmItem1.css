@@ -1,0 +1,145 @@
+/*  Search bar */
+.searchBar{
+	background: #444;
+    padding: 1em 0;
+}
+.search{
+	margin: auto;
+	height: 40px;
+
+	width: 100%;
+	max-width: 750px;
+	display: flex;
+}
+.search input,
+.search select{
+	font-size: 1.1rem;
+}
+.search input,
+.search .my-personal-select,
+.search button{
+	border: none;
+	flex-grow: 1;
+}
+.search .my-personal-select{
+	flex-grow: 1.5;
+}
+.search input{
+	text-indent: 10px;
+	border-left: 1px #ddd solid;
+	flex-grow: 4;
+}
+
+.search button{
+	flex-grow: .2;
+	font-size: 1.2em;
+}
+
+/* */
+
+.bodyItem1{
+	display: flex;
+	color: #666;
+	background: #f9f9f9;
+
+	padding-bottom: 2vh;
+}
+.bodyItem1 h1{
+	font-weight: normal;
+	background: #fff;
+	font-size: 1.7em;
+}
+
+
+.addNew,
+.list > div{
+	background: #fff;
+	padding: 15px;
+}
+
+
+.bodyItem1 .addNew{
+	
+	width: 320px;
+	flex-grow: 0;
+	font-size: .95em;
+}
+.addNew p{
+	margin-bottom: 15px;
+}
+.addNew h1{
+	margin-bottom: 20px;
+
+}
+.addNew p input,
+.addNew p .my-personal-select,
+.addNew p textarea{
+	width: 100%;
+	border: 1px #ddd solid;	
+}
+.addNew p .my-personal-select{
+	height: 37px;
+}
+.addNew p input,
+.addNew p textarea{
+	padding: 10px 5px;
+}
+.addNew p textarea{
+	height: 90px;
+	resize: none;
+}
+.addNew > input{
+	padding: 10px 15px;
+	background: #4285F4;
+	color: #fff;
+	border: none;
+}
+
+
+.bodyItem1 .list{
+	flex-grow: 1;
+	margin-left: 40px;
+}
+.list .listItem{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px #eee solid;
+
+}
+.list .specificList label{
+	display: inline-block;
+	padding: 5px;
+	background: #fff;
+	border-bottom: 3px #fff solid;
+	margin: 20px 20px 0 0;
+	cursor: pointer;
+	transition: all .4s ease;
+}
+.list .specificList label:hover{
+	color: #4285F4;
+	/*transform: scale(1.02);*/
+	transition: all .4s ease;
+}
+.list .activespecific{
+	border-bottom: 3px #4285F4 solid !important;
+	color: #4285F4;
+}
+.list button{
+	height: 40px;
+	position: relative;
+	bottom: 3px;
+	background: #f0f0f0;
+}
+.list button:hover{
+	background: #f8f8f8;
+}
+
+.list .below{
+	margin-top: 20px;
+	background: #fff;
+	min-height: 300px;
+}
+.below table{
+	
+}

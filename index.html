@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+        <script type="text/javascript" src="resources/js/jQuery.js"></script>
+        <script type="text/javascript" src="resources/js/Login.js"></script>
+	<link rel="stylesheet" type="text/css" href="resources/css/login.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/geralStyle.css">
+        
+</head>
+<body>
+	<div class="content">
+		<div>
+			<h3>Login</h3>
+			<input type="text" placeholder="User" class="txtUser"></input>
+			<input type="password" placeholder="Password" class="txtPassword"></input>
+                        <label id="loginErrorInfo" >Nome de utilizador e/ou palavra-passe inválida!</label>
+                        <input type="submit" value="Entrar" id="btEntrar"></input>
+                  
+		</div>
+	</div>
+    <section class="modalPage mp-edit-password alterarSenha"  >
+            <div class="modalFrame" >
+            <div class="modalContainer">
+
+                <nav class="alert">
+                    <nav>
+                        <p></p>
+                        <label class="icon-arrow-up2 close-modal-alert">As senhas não se correspondem! </label>
+                    </nav>
+                </nav>  
+
+                <div class="edit-password" >
+                    <p class="userName"> </p>
+                    <p>
+                        Nova senha
+                        <input type="password" class="component-shadow fieldsChangePassword" id="loginNovaSenha">
+                    </p>
+                    <p>
+                        Confirme nova senha
+                        <input type="password" class="component-shadow fieldsChangePassword" id="loginConfirmarSenha">
+                    </p>
+                </div>
+                <div class="bt-yes-no-cancel">
+                    <button class="yes-edit-password">Confirmar</button>
+                    <button class="bt-no-option">Cancelar</button>
+                </div>
+                <div class="modal-header">
+                    <b>Editar senha</b>
+                    <span>X</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

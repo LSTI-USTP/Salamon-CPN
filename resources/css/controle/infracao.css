@@ -1,0 +1,82 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	font-family:arial;
+}
+.geral{
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+div{
+	border-bottom: 1px solid #ccc;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin: auto;
+	width: 90%;
+}
+#corpo{
+	background:#fff;
+	width: 85%;
+	height: 100%;
+	padding: 10px;
+	margin: 10px auto;
+}
+table{
+	background: #fff;
+	border:none;
+	width: 85%;
+	height: 250px;
+	margin: auto;
+	text-align: left;
+}
+tr td{
+	border:none;
+	width: 150px;
+	margin: 5px;
+}
+tr, #c1 > td input[type=text]{
+	width: 120px;
+}
+   tr, #t1 > td input[type=text], #t2 > td input[type=text], #t3 > td input[type=text]{
+ 	width: 190px;
+ 	padding:10px;
+ }
+select{
+	width: 295px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	box-shadow: 0  0 0 0.3px #bbb;
+	border-radius: 3px;
+}
+input[type=text]{
+   padding: 10px;
+   margin-left:6px;
+   border: 1px solid #ccc; 
+   box-shadow: 0 0 0 0.3px #bbb;
+   border-radius: 3px;
+}
+input[type=submit]{
+	width: 200px;
+	padding: 10px;
+	margin: 5px auto;
+	margin-left: 500px;
+	border-radius: 3px;
+	border: none;
+	color: #fff;
+	background: #31b4e4;
+	text-transform: uppercase;
+
+}
+input[type=radio]{
+	margin: 5px;
+
+}
+textarea{
+	margin-left: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 0 0.3px #bbb;
+    border-radius: 3px;
+
+}
